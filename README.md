@@ -73,7 +73,7 @@ IP address of the host:
 
 Type of the protocol used:
 
-![image](/Screenshots/10.jpg)
+As we can see on screenshot before it's a HTTP protocol.
 
 <br>
 
@@ -81,7 +81,7 @@ Type of the protocol used:
 
 I was given a task to filter out every traffic that is NOT DNS:
 
-![image](/Screenshots/11.jpg)
+![image](/Screenshots/10.jpg)
 
 DNS traffic usually uses UDP protocol on port 53.
 
@@ -91,7 +91,7 @@ DNS traffic usually uses UDP protocol on port 53.
 
 I was given a task to watch for webservers. On the screenshot below we can see that there is no traffic on port 443 so we don’t have HTTPS connections.
 
-![image](/Screenshots/12.jpg)
+![image](/Screenshots/11.jpg)
 
 <br>
 <br>
@@ -102,13 +102,13 @@ I was given a task to watch for webservers. On the screenshot below we can see t
 
 As before in TCPDUMP a simple warm-up.
 
-![image](/Screenshots/13.jpg)
+![image](/Screenshots/12.jpg)
 
 <br>
 
 **Task 2 - Create a capture filter**
 
-![image](/Screenshots/14.jpg)
+![image](/Screenshots/13.jpg)
 
 Using this command I filtered for traffic only coming through my IP address.
 
@@ -124,7 +124,7 @@ Nothing to show. I just opened a file from HackTheBox resources.
 
 **Task 2 - Filter the results**
 
-![image](/Screenshots/15.jpg)
+![image](/Screenshots/14.jpg)
 
 In display filter I used a command to fitler for HTTP traffic.
 
@@ -136,15 +136,15 @@ I was tasked to find a server response for client's get request and do right cli
 
 It is what I received:
 
-![image](/Screenshots/16.jpg)
+![image](/Screenshots/15.jpg)
 
 On the screenshot above I saw that there was a stream of an image. To follow investigation I filtered traffic in Wireshark for images:
 
-![image](/Screenshots/17.jpg)
+![image](/Screenshots/16.jpg)
 
 I extracted jpg files from this traffic and these are the results:
 
-![image](/Screenshots/18.jpg)
+![image](/Screenshots/17.jpg)
 
 <br>
 
@@ -156,11 +156,11 @@ I opened a file prepared by HackTheBox.
 
 I instantly filtered for RDP connections:
 
-![image](/Screenshots/19.jpg)
+![image](/Screenshots/18.jpg)
 
 To see more connections I changed the filter from RDP connections for port 3389 that is often used for RDP traffic.
 
-![image](/Screenshots/20.jpg)
+![image](/Screenshots/19.jpg)
 
 It worked. I was able to see more of RDP connections.
 
